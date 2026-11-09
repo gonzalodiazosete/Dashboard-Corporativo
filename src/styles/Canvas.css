@@ -1,0 +1,6 @@
+/* panel central: flex: 1 hace que ocupe todo el ancho que sobra al lado del sidebar */
+.canvas {
+    background-color: #F4F4F4;
+    flex: 1;
+    padding: 1.5rem;
+}

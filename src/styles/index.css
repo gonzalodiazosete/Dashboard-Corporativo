@@ -1,0 +1,26 @@
+/* quito los márgenes y rellenos por defecto del navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* el padding y el borde cuentan dentro del ancho */
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* la app va en columna: el header arriba y .abajo debajo */
+.principal {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh; /* Necesario para que .abajo crezca verticalmente */
+}
+
+/* sidebar y canvas en fila, ocupando todo el alto que deja el header */
+.abajo {
+  display: flex;
+  flex: 1; /* Ocupará todo el espacio vertical sobrante debajo del header */
+}

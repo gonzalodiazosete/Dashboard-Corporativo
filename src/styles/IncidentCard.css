@@ -1,0 +1,36 @@
+/* tarjeta de incidencia: el icono a la izquierda y el texto a la derecha */
+.incidencia-card {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.incidencia-card .icono {
+    font-size: 1.5rem;
+}
+
+.incidencia-card h3 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+}
+
+.incidencia-card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* estas dos clases las elige IncidentCard.tsx con el ternario según resuelta */
+/* resuelta: fondo verde claro */
+.incidencia-card.resuelta {
+    background-color: #d9f2e0;
+    color: #00471B;
+}
+
+/* pendiente: fondo naranja claro */
+.incidencia-card.pendiente {
+    background-color: #ffe9cc;
+    color: #8a4b00;
+}

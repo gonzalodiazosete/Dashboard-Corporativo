@@ -1,0 +1,25 @@
+/* menú vertical (flex-direction: column) con los botones separados por gap */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color:  #005F26;
+    width: 15rem;
+    gap: 0.5rem;
+    padding : 1rem;
+}
+
+.sidebar button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #1D1D1B;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* al pasar el ratón por encima el botón cambia de color */
+.sidebar button:hover {
+    background-color: bisque;
+}

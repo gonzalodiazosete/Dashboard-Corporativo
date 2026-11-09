@@ -1,0 +1,24 @@
+/* cuadrícula de 3 columnas iguales para las tarjetas de activos */
+.activos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* título y botón en la misma fila; también lo usa la vista de Incidencias */
+.cabecera-vista {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* separación entre el título y el botón */
+    margin-bottom: 1rem;
+}
+
+.cabecera-vista button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #00471B;
+    color: white;
+    cursor: pointer;
+}

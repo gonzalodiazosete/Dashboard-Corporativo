@@ -1,0 +1,40 @@
+/* space-between manda el logo a la izquierda y la hora a la derecha */
+.header {
+    display: flex;
+    background-color:#00471B;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo y nombre en la misma fila, centrados verticalmente */
+.imagen {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.imagen img {
+    width: 8.5rem;
+    height: auto;
+}
+
+.imagen h1 {
+    margin: 0;
+    color: #EEE1C6;
+}
+
+
+/* la hora va en una pastilla blanca con los bordes muy redondeados */
+.hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+    height: 4rem;
+    padding: 1rem;
+    background-color: white;
+    font-size: x-large;
+    margin-right: 2rem;
+    color: #1D1D1B;
+    font-weight: 600;
+}
